@@ -22,10 +22,12 @@ class Bicycle
   end
   
   # サブクラスでオーバーライド
+  # サブクラスがスーパークラスのアルゴリズムを知っておく責任から解放される
   def post_initialize
-    {}
+    nil
   end
-
+  
+  # サブクラスの特化を行うフックメソッド
   def local_spares
     {}
   end

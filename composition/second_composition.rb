@@ -34,7 +34,7 @@ module PartsFactory
   end
 
   def self.create_part(part_config)
-    OpenStruct.new(name: part_config[0], description: part_config[1], needs_spare: part_config.fetch(2, true)
+    OpenStruct.new(name: part_config[0], description: part_config[1], needs_spare: part_config.fetch(2, true))
   end
 end
 
